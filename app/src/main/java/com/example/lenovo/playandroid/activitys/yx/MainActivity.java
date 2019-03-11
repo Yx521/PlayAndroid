@@ -55,6 +55,7 @@ import com.example.lenovo.playandroid.utils.CircularRevealAnim;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.List;
 
 import butterknife.BindView;
@@ -63,11 +64,10 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-//杨旭
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String TAG = "MainActivity";
     @BindView(R.id.common_toolbar_title_tv)
     TextView mCommonToolbarTitleTv;
     @BindView(R.id.toolbar)
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mIntent = getIntent();
-        Log.d(TAG, "onCreate: =="+"kmoj");
+
 
 
 
